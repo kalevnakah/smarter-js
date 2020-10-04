@@ -58,4 +58,10 @@ for (var i = 0; i < books.length; i++){
 alert(bibleVerses[someNum + 1]);
 var favBook = prompt("What's your favorite gospel book?", "Matthew");
 var favBookLowerCase = favBook.toLowerCase();
-alert(favBookLowerCase);
+//alert(favBookLowerCase);
+var firstLetter = favBook.slice(0,1).toUpperCase();
+//alert(firstLetter);
+var otherLetters = favBook.slice(1, favBook.length).toLowerCase();
+//alert(otherLetters);
+var favBookCap = firstLetter + otherLetters;
+alert(favBookCap);
