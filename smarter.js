@@ -28,3 +28,14 @@ alert(numbers[3]);
 numbers[3] = numbers.shift();
 alert(numbers);
 alert(numbers.pop());
+var realNumber = false;
+for (i = 0; i < numbers.length; i++) {
+    if (numbers[i] == answer1) {
+        alert("That's a low number!");
+        realNumber = true;
+        break;
+    }    
+}
+if (realNumber === false) {
+    alert("That's not a real number!");
+}
