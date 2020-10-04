@@ -17,3 +17,12 @@ else {
     numbers.push(answer1);
 }
 alert(numbers);
+numbers.unshift(1,2,3,4);
+alert(numbers);
+var oldNumbers = numbers.slice(4,7);
+numbers.splice(4,7);
+alert("Old: " + oldNumbers + "New: " + numbers);
+alert(numbers[3]);
+numbers[3] = numbers.shift();
+alert(numbers);
+alert(numbers.pop());
