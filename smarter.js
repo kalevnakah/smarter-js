@@ -8,3 +8,6 @@ if (answer1 == someNum) {
     var myNumber = someNum;
     alert("That's my number too!")
 }
+else {
+    alert("I don't like that number!");
+}
