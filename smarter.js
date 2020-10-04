@@ -17,7 +17,9 @@ else {
     numbers.push(answer1);
 }
 alert(numbers);
-numbers.unshift(1,2,3,4);
+for (i = 1; i < 5; i++) {
+    numbers.unshift(i);
+}
 alert(numbers);
 var oldNumbers = numbers.slice(4,7);
 numbers.splice(4,7);
