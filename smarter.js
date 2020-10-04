@@ -24,9 +24,7 @@ alert(numbers);
 var oldNumbers = numbers.slice(4,7);
 numbers.splice(4,7);
 alert("Old: " + oldNumbers + "New: " + numbers);
-alert(numbers[3]);
 numbers[3] = numbers.shift();
-alert(numbers);
 alert(numbers.pop());
 var realNumber = false;
 for (i = 0; i < numbers.length; i++) {
@@ -39,3 +37,22 @@ for (i = 0; i < numbers.length; i++) {
 if (realNumber === false) {
     alert("That's not a real number!");
 }
+var books = ["Mathew", "Mark", "Luke", "John"];
+//alert(books.length + " Books");
+var chapters = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,24,25,26,27,28,29];
+//alert(chapters.length + " Chapters");
+var verses = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,24,25,26,27,28,29];
+//alert(verses.length + " Verses");
+var bibleVerses = [];
+//alert ("References" + bibleVerses +" ?");
+for (var i = 0; i < books.length; i++){
+    //alert("books index: " + i);
+    for (var j = 0; j < chapters.length; j++){
+        //alert("chapter index: " + j);
+        for (var k = 0; k < verses.length; k++) {
+            //alert("verses index: " + k);
+            bibleVerses.push([books[i] + " " + chapters[j] + ":" + verses[k]])
+        }
+    }
+}
+alert(bibleVerses[someNum + 1]);
