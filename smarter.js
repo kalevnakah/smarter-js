@@ -88,3 +88,6 @@ alert(bibleIndex.charAt(42));
 bibleIndex = bibleIndex.replace(/Mat/g, "Mt");
 alert(bibleIndex);
 alert("Round 2.51 " + Math.round(2.51) + " " + Math.ceil(2.51) + " " + Math.floor(2.51));
+alert("Dice Roll: " + Math.floor((Math.random() * 6) + 1));
+alert("Dice Roll: " + Math.floor((Math.random() * 6) + 1));
+alert("Dice Roll: " + Math.floor((Math.random() * 6) + 1));
