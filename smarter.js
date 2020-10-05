@@ -84,3 +84,4 @@ if ( matthewIndex !== -1){
     }
 }
 alert(bibleIndex);
+alert(bibleIndex.charAt(42));
