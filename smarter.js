@@ -96,4 +96,6 @@ alert("Dice Roll: " + Math.floor((Math.random() * 6) + 1));
 alert("Dice Roll: " + Math.floor((Math.random() * 6) + 1));
 alert("Dice Roll: " + Math.floor((Math.random() * 6) + 1));
 alert(("42" + 42) + " " + ("42" - 5) + " " + (parseInt("42") + 42) + " " + (parseFloat(1.2345) + 42));
-
+var stringNumber = 42;
+var numberNumber = stringNumber.toString();
+alert("This number was a number: " + numberNumber);
