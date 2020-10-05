@@ -99,3 +99,8 @@ alert(("42" + 42) + " " + ("42" - 5) + " " + (parseInt("42") + 42) + " " + (pars
 var stringNumber = 42;
 var numberNumber = stringNumber.toString();
 alert("This number was a number: " + numberNumber);
+var tax = .0675;
+var value = 10.00;
+var total = value * tax;
+var prettyTotal = total.toFixed(2);
+alert("$" + prettyTotal)
