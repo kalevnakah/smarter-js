@@ -103,4 +103,8 @@ var tax = .0675;
 var value = 10.00;
 var total = value * tax;
 var prettyTotal = total.toFixed(2);
-alert("$" + prettyTotal)
+alert("$" + prettyTotal);
+var dayOfTheWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+var now = new Date();
+var today = now.getDay();
+alert("Today is: " + dayOfTheWeek[today]);
