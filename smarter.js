@@ -37,7 +37,7 @@ for (i = 0; i < numbers.length; i++) {
 if (realNumber === false) {
     alert("That's not a real number!");
 }
-var books = ["mathew", "mark", "luke", "john"];
+var books = ["matthew", "mark", "luke", "john"];
 //alert(books.length + " Books");
 var chapters = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,24,25,26,27,28,29];
 //alert(chapters.length + " Chapters");
@@ -65,3 +65,22 @@ var otherLetters = favBook.slice(1, favBook.length).toLowerCase();
 //alert(otherLetters);
 var favBookCap = firstLetter + otherLetters;
 alert(favBookCap);
+var bibleIndex = "";
+for (var i = 0; i < bibleVerses.length; i++) {
+    bibleIndex = bibleIndex + " " + bibleVerses[i];
+}
+alert(bibleIndex);
+var matthewIndex = bibleIndex.indexOf("matthew");
+var lastMatthewIndex = bibleIndex.lastIndexOf("matthew");
+//alert("index: " + matthewIndex);
+//alert("last: " + lastMatthewIndex);
+if ( matthewIndex !== -1){
+    //alert("Not -1");
+    for (var i = 0; matthewIndex <= lastMatthewIndex && matthewIndex !== -1; i++) {
+        //alert("Iteration: " + i);
+        matthewIndex = bibleIndex.indexOf("matthew");
+        bibleIndex = bibleIndex.slice(0,matthewIndex) + "Mat" + bibleIndex.slice(matthewIndex + 7);
+        //alert(bibleIndex);
+    }
+}
+alert(bibleIndex);
