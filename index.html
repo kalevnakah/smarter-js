@@ -54,5 +54,11 @@
         This is some text that will be replaced by some other text and elements.
         When you <a href="javascript:void(0);" onclick="replaceText();">click here</a>
       </p>
+      <script>
+        function makeInvisible(){
+          document.getElementById("disappear").className = "hidden";
+        }
+      </script>
+      <img id="disappear" src="invisible.jpg" onclick="makeInvisible();"><img>
 
   </body>
