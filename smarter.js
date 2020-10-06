@@ -111,3 +111,10 @@ function chapter26_35() {
     var msDiff = new Date("February 5, 2021").getTime() - new Date().getTime();
     alert("My B-Day is " + Math.floor(msDiff/(1000*60*60*24)) + " days away!");
 }
+function chapter36(d, s, num) {
+    alert(d + " " + s + " " + num);
+}
+var d = "Sunday";
+var s = "is a day of rest";
+var num = 7;
+chapter36(d,s,num);
