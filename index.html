@@ -60,5 +60,14 @@
         }
       </script>
       <img id="disappear" src="invisible.jpg" onclick="makeInvisible();"><img>
-
+      <script>
+        function swapImg(eID,srcImg){
+          document.getElementById(eID).src = srcImg;
+        }
+      </script>
+      <img id="anyID" 
+      src="Alauda.jpg" 
+      onmouseover="swapImg(id,'Stavenn.jpg')"
+      onmouseout="swapImg(id,'Alauda.jpg')"
+      ></img>
   </body>
