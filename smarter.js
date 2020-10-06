@@ -149,5 +149,9 @@ switch(dayOfWk) {
         alert("Just another day");
         break;
 }
-
+var whileCounter = 3;
+while (whileCounter >= 0) {
+    alert("Count Down : " + whileCounter);
+    whileCounter--;
+}
 
