@@ -90,23 +90,24 @@ function chapter1_25() {
     bibleIndex = bibleIndex.replace(/Mat/g, "Mt");
     alert(bibleIndex);
 }
-
-alert("Round 2.51 " + Math.round(2.51) + " " + Math.ceil(2.51) + " " + Math.floor(2.51));
-alert("Dice Roll: " + Math.floor((Math.random() * 6) + 1));
-alert("Dice Roll: " + Math.floor((Math.random() * 6) + 1));
-alert("Dice Roll: " + Math.floor((Math.random() * 6) + 1));
-alert(("42" + 42) + " " + ("42" - 5) + " " + (parseInt("42") + 42) + " " + (parseFloat(1.2345) + 42));
-var stringNumber = 42;
-var numberNumber = stringNumber.toString();
-alert("This number was a number: " + numberNumber);
-var tax = .0675;
-var value = 10.00;
-var total = value * tax;
-var prettyTotal = total.toFixed(2);
-alert("$" + prettyTotal);
-var dayOfTheWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-var now = new Date();
-var today = now.getDay();
-alert("Today is: " + dayOfTheWeek[today]);
-var msDiff = new Date("February 5, 2021").getTime() - new Date().getTime();
-alert("My B-Day is " + Math.floor(msDiff/(1000*60*60*24)) + " days away!");
+function chapter26_35() {
+    alert("Round 2.51 " + Math.round(2.51) + " " + Math.ceil(2.51) + " " + Math.floor(2.51));
+    alert("Dice Roll: " + Math.floor((Math.random() * 6) + 1));
+    alert("Dice Roll: " + Math.floor((Math.random() * 6) + 1));
+    alert("Dice Roll: " + Math.floor((Math.random() * 6) + 1));
+    alert(("42" + 42) + " " + ("42" - 5) + " " + (parseInt("42") + 42) + " " + (parseFloat(1.2345) + 42));
+    var stringNumber = 42;
+    var numberNumber = stringNumber.toString();
+    alert("This number was a number: " + numberNumber);
+    var tax = .0675;
+    var value = 10.00;
+    var total = value * tax;
+    var prettyTotal = total.toFixed(2);
+    alert("$" + prettyTotal);
+    var dayOfTheWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    var now = new Date();
+    var today = now.getDay();
+    alert("Today is: " + dayOfTheWeek[today]);
+    var msDiff = new Date("February 5, 2021").getTime() - new Date().getTime();
+    alert("My B-Day is " + Math.floor(msDiff/(1000*60*60*24)) + " days away!");
+}
