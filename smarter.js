@@ -154,4 +154,9 @@ while (whileCounter >= 0) {
     alert("Count Down : " + whileCounter);
     whileCounter--;
 }
+var doCounter = 3;
+do {
+    alert("I run this code once every time! " + doCounter);
+    doCounter++;
+} while (doCounter <= 2); 
 
