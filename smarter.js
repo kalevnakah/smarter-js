@@ -159,4 +159,7 @@ do {
     alert("I run this code once every time! " + doCounter);
     doCounter++;
 } while (doCounter <= 2); 
-
+/* Muti-Line
+Comment
+Goes
+Here */
