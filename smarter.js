@@ -128,4 +128,26 @@ function chapter38(chpt) {
     return chpt38;
 }
 alert("Chapter " + chapter38(currentChpt) + " completed!");
+var dayOfWk = "Sun";
+switch(dayOfWk) {
+    case "Sun":
+        alert("Church Day");
+        break;
+    case "Mon":
+        alert("Should of stayed in bed");
+        break;
+    case "Wed":
+        alert("The other church day");
+        break;
+    case "Fri":
+        alert("Whoopie!");
+        break;
+    case "Sat":
+        alert("Day of Rest");
+        break;
+    default:
+        alert("Just another day");
+        break;
+}
+
 
