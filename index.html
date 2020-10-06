@@ -62,7 +62,8 @@
       <img id="disappear" src="invisible.jpg" onclick="makeInvisible();"><img>
       <script>
         function swapImg(eID,srcImg){
-          document.getElementById(eID).src = srcImg;
+          var oldImg = document.getElementById(eID);
+          oldImg.src = srcImg;
         }
       </script>
       <img id="anyID" 
