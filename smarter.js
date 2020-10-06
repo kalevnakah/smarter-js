@@ -118,3 +118,7 @@ var d = "Sunday";
 var s = "is a day of rest";
 var num = 7;
 chapter36(d,s,num);
+function chapter37(d,s,num){
+    return (d + " " + s + " " + (num - 1));
+}
+alert(chapter37(d,s,num));
