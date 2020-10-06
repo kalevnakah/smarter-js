@@ -122,3 +122,10 @@ function chapter37(d,s,num){
     return (d + " " + s + " " + (num - 1));
 }
 alert(chapter37(d,s,num));
+var currentChpt = 38;
+function chapter38(chpt) {
+    var chpt38 = chpt;
+    return chpt38;
+}
+alert("Chapter " + chapter38(currentChpt) + " completed!");
+
