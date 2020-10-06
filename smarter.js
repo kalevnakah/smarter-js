@@ -111,55 +111,58 @@ function chapter26_35() {
     var msDiff = new Date("February 5, 2021").getTime() - new Date().getTime();
     alert("My B-Day is " + Math.floor(msDiff/(1000*60*60*24)) + " days away!");
 }
-function chapter36(d, s, num) {
-    alert(d + " " + s + " " + num);
+function chapter36_44() {
+    function chapter36(d, s, num) {
+        alert(d + " " + s + " " + num);
+    }
+    var d = "Sunday";
+    var s = "is a day of rest";
+    var num = 7;
+    chapter36(d,s,num);
+    function chapter37(d,s,num){
+        return (d + " " + s + " " + (num - 1));
+    }
+    alert(chapter37(d,s,num));
+    var currentChpt = 38;
+    function chapter38(chpt) {
+        var chpt38 = chpt;
+        return chpt38;
+    }
+    alert("Chapter " + chapter38(currentChpt) + " completed!");
+    var dayOfWk = "Sun";
+    switch(dayOfWk) {
+        case "Sun":
+            alert("Church Day");
+            break;
+        case "Mon":
+            alert("Should of stayed in bed");
+            break;
+        case "Wed":
+            alert("The other church day");
+            break;
+        case "Fri":
+            alert("Whoopie!");
+            break;
+        case "Sat":
+            alert("Day of Rest");
+            break;
+        default:
+            alert("Just another day");
+            break;
+    }
+    var whileCounter = 3;
+    while (whileCounter >= 0) {
+        alert("Count Down : " + whileCounter);
+        whileCounter--;
+    }
+    var doCounter = 3;
+    do {
+        alert("I run this code once every time! " + doCounter);
+        doCounter++;
+    } while (doCounter <= 2); 
+    /* Muti-Line
+    Comment
+    Goes
+    Here */
 }
-var d = "Sunday";
-var s = "is a day of rest";
-var num = 7;
-chapter36(d,s,num);
-function chapter37(d,s,num){
-    return (d + " " + s + " " + (num - 1));
-}
-alert(chapter37(d,s,num));
-var currentChpt = 38;
-function chapter38(chpt) {
-    var chpt38 = chpt;
-    return chpt38;
-}
-alert("Chapter " + chapter38(currentChpt) + " completed!");
-var dayOfWk = "Sun";
-switch(dayOfWk) {
-    case "Sun":
-        alert("Church Day");
-        break;
-    case "Mon":
-        alert("Should of stayed in bed");
-        break;
-    case "Wed":
-        alert("The other church day");
-        break;
-    case "Fri":
-        alert("Whoopie!");
-        break;
-    case "Sat":
-        alert("Day of Rest");
-        break;
-    default:
-        alert("Just another day");
-        break;
-}
-var whileCounter = 3;
-while (whileCounter >= 0) {
-    alert("Count Down : " + whileCounter);
-    whileCounter--;
-}
-var doCounter = 3;
-do {
-    alert("I run this code once every time! " + doCounter);
-    doCounter++;
-} while (doCounter <= 2); 
-/* Muti-Line
-Comment
-Goes
-Here */
+
