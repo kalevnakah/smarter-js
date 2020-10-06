@@ -42,4 +42,17 @@
       <input id="zip" type="text" size="30" onblur="fillCity();"><br>
       <label>city</label><br>
       <input id="city" type="text" size="30">
+      <script>
+        function replaceText() {
+          var textToReplace = document.getElementById("someText").innerHTML;
+          alert(textToReplace);
+          var textNew = "<h1>Where did it go?</hi><ul><li>The Sky</li><li>Under the rug</li>";
+          document.getElementById("someText").innerHTML = textNew;
+        }
+      </script>
+      <p id="someText">
+        This is some text that will be replaced by some other text and elements.
+        When you <a href="javascript:void(0);" onclick="replaceText();">click here</a>
+      </p>
+
   </body>
