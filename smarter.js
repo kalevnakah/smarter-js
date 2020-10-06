@@ -108,3 +108,5 @@ var dayOfTheWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 var now = new Date();
 var today = now.getDay();
 alert("Today is: " + dayOfTheWeek[today]);
+var msDiff = new Date("February 5, 2021").getTime() - new Date().getTime();
+alert("My B-Day is " + Math.floor(msDiff/(1000*60*60*24)) + " days away!");
