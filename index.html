@@ -71,4 +71,13 @@
       onmouseover="swapImg(id,'Stavenn.jpg')"
       onmouseout="swapImg(id,'Alauda.jpg')"
       ></img>
+      <script>
+        function plusFontSize() {
+          var par = document.getElementsByTagName("p");
+          for (i=0;par.length > i; i++){
+            par[i].style.fontSize = "2em";
+          }
+        }
+      </script>
+      <input type="button" value="Big Font" onclick="plusFontSize()"></input>
   </body>
