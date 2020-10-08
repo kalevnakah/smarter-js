@@ -85,7 +85,17 @@
           var hrefLoc = window.location.href;
           var docUrl = document.URL;
           alert("href = " + hrefLoc + " Document URL = " + docUrl);
+          window.location.assign("https://kalevnakah.me");
         }
       </script>
       <input type="button" value="Get URL" onclick="getURL()"></input>
+      <script>
+        function openWind() {
+          var monkeyDoc = document.write("<h1>Bang!<h1>")
+         var monkeyWindow = monkeyWindow.location.assign(monkeyDoc);
+         //window.open("https://kalevnakah.me");
+        }
+      </script>    
+      <input type="button" onclick="openWind()" value="Open the wind"></input>
+
   </body>
